@@ -121,11 +121,6 @@ h1, h2 {
   font-size: 14px;
 }
 
-.primary {
-  background-color: #3b82f6;
-  color: white;
-}
-
 .outline {
   background: transparent;
   border: 1px solid #3b82f6;
@@ -186,6 +181,7 @@ h1, h2 {
 .skills {
   padding: 50px 10px;
   text-align: center;
+  margin-top: -60px;
 }
 
 .skills h2 {
@@ -238,6 +234,7 @@ h1, h2 {
 
 .projects-section {
   padding: 30px 20px;
+  margin-top: -60px;
 }
 
 .projects-grid {

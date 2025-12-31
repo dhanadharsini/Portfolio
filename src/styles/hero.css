@@ -1,9 +1,9 @@
 .hero {
+  min-height: calc(100vh - 60px); /* subtract navbar height */
+  padding-top: 0;
+  margin-top: 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 80px 60px;
-  min-height: 10vh;
 }
 
 .hero-left {
@@ -94,5 +94,42 @@
   /* Reduce space above skills */
   #skills {
     padding-top: 30px;      /* tighter spacing */
+  }
+}
+.primary {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 24px;
+  
+  background: linear-gradient(135deg, #1f8ef1, #007bff);
+  color: #fff;
+
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+/* ======================================= */
+/* 💻 REDUCE GAP BETWEEN HERO & SKILLS */
+/* ======================================= */
+
+@media (min-width: 769px) {
+
+  /* Reduce space below hero */
+  .hero {
+    padding-bottom: 5px;   /* was too large */
+    margin-bottom: 0;
+  }
+
+  /* Reduce space above skills */
+  #skills {
+    padding-top: 1px;      /* tighter spacing */
   }
 }

@@ -1,5 +1,6 @@
 import img from "../assets/dd.jpeg";
 import resume from "../assets/resume.pdf";
+import "../styles/hero.css"
 
 
 export default function Hero() {
