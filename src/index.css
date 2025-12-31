@@ -348,7 +348,6 @@ h1, h2 {
 
 .contact-btn {
   color: #333;
-  margin-left:50px;
   border: none;
   padding: 12px 25px;
   border-radius: 10px;
@@ -370,4 +369,173 @@ h1, h2 {
   flex-direction: row; /* vertical layout */
   align-items: center;
   gap: 100px; /* increased spacing between buttons */
+}
+/* ========================= */
+/* 📱 MOBILE RESPONSIVE FIX */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  /* GLOBAL */
+  section {
+    padding: 40px 15px;
+  }
+
+  h1 {
+    font-size: 30px !important;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  /* NAVBAR */
+  .nav-content {
+    width: 100%;
+    padding: 0 15px;
+    justify-content: center;
+  }
+
+  .nav-links {
+    gap: 12px;
+    font-size: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* HERO */
+  .hero {
+    margin-top: 80px;
+    min-height: auto;
+    padding-top: 20px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero img {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 20px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .hero-buttons button {
+    width: 80%;
+  }
+
+  /* SKILLS */
+  .skills-list {
+    gap: 10px;
+  }
+
+  .skill-badge {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+
+  /* PROJECTS */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    padding: 15px;
+  }
+
+  /* EDUCATION */
+  .education-card {
+    padding: 15px;
+  }
+
+  .education-card h3 {
+    font-size: 1rem;
+  }
+
+  /* CONTACT */
+  .contact-buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-btn {
+    margin-left: 0;
+    width: 160px;
+  }
+
+}
+/* =============================== */
+/* 📱 FIX EXTRA GAP BELOW HERO */
+/* =============================== */
+
+@media (max-width: 768px) {
+
+  .hero {
+    margin-top: 70px;      /* only space for navbar */
+    padding-top: 0;        /* remove extra padding */
+    padding-bottom: 20px;  /* small clean spacing */
+  }
+
+  #home {
+    padding-top: 0;        /* remove double spacing */
+  }
+
+  section {
+    padding-top: 30px;     /* reduce overall section padding */
+    padding-bottom: 30px;
+  }
+}
+/* =============================== */
+/* 📱 FIX GAP ABOVE SKILLS */
+/* =============================== */
+
+@media (max-width: 768px) {
+
+  #skills {
+    padding-top: 10px;   /* reduce top gap */
+  }
+
+  .hero {
+    padding-bottom: 10px; /* reduce bottom gap */
+  }
+
+}
+/* ======================================= */
+/* 💻 DESKTOP SPACING RESTORE (SAFE FIX) */
+/* ======================================= */
+
+@media (min-width: 769px) {
+
+  /* Restore section spacing */
+  section {
+    padding: 80px 20px;
+  }
+
+  /* Hero spacing */
+  .hero {
+    margin-top: 100px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  /* Space below hero */
+  #home {
+    padding-bottom: 80px;
+  }
+
+  /* Space above skills */
+  #skills {
+    padding-top: 80px;
+  }
 }
