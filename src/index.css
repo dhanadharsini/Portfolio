@@ -215,7 +215,7 @@ h1, h2 {
 /* Hover effect */
 .skill-badge:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px rgba(12, 12, 12, 0.2);
 }
 #home {
   padding: 30px 20px;
@@ -336,7 +336,7 @@ h1, h2 {
 .contact p {
   margin-bottom: 25px;
   font-size: 1rem;
-  color: #555;
+  color: #c0b9b9;
 }
 
 .contact-buttons-vertical {
