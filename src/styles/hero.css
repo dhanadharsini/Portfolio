@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 80px 60px;
-  min-height: 90vh;
+  min-height: 10vh;
 }
 
 .hero-left {
@@ -78,4 +78,21 @@
   border-radius: 50%;
   border: 4px solid #1f8ef1;
   object-fit: cover;
+}
+/* ======================================= */
+/* 💻 REDUCE GAP BETWEEN HERO & SKILLS */
+/* ======================================= */
+
+@media (min-width: 769px) {
+
+  /* Reduce space below hero */
+  .hero {
+    padding-bottom: 10px;   /* was too large */
+    margin-bottom: 0;
+  }
+
+  /* Reduce space above skills */
+  #skills {
+    padding-top: 30px;      /* tighter spacing */
+  }
 }

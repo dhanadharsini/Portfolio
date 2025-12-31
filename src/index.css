@@ -539,3 +539,20 @@ h1, h2 {
     padding-top: 80px;
   }
 }
+/* ======================================= */
+/* 💻 REDUCE GAP BETWEEN HERO & SKILLS */
+/* ======================================= */
+
+@media (min-width: 769px) {
+
+  /* Reduce space below hero */
+  .hero {
+    padding-bottom: 5px;   /* was too large */
+    margin-bottom: 0;
+  }
+
+  /* Reduce space above skills */
+  #skills {
+    padding-top: 1px;      /* tighter spacing */
+  }
+}
