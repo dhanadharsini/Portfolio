@@ -97,24 +97,29 @@
   }
 }
 .primary {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
   margin-top: 20px;
-  padding: 10px 24px;
-  
+  padding: 12px 36px;
+  min-width: 150px;          /* clean width */
+
   background: linear-gradient(135deg, #1f8ef1, #007bff);
   color: #fff;
 
   font-size: 14px;
   font-weight: 600;
-  letter-spacing: 0.5px;
+  letter-spacing: 0;         /* IMPORTANT: fixes right shift */
 
   border: none;
-  border-radius: 20px;
+  border-radius: 22px;
   cursor: pointer;
   text-decoration: none;
 
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 /* ======================================= */
 /* 💻 REDUCE GAP BETWEEN HERO & SKILLS */
