@@ -1,9 +1,9 @@
 export default function Projects() {
   const projects = [
     {
-      name: "Portfolio Website",
-      description: "A personal portfolio built using React to showcase projects and skills.",
-      github: "https://github.com/dhanadharsini/Portfolio",
+      name: "Digital PL",
+      description: "A full-stack project that automates PL and outpass requests,enables multi-level approval from parents and wardens using QR-based PL cards for secure entry and exit tracking",
+      github: "https://github.com/dhanadharsini/Digital_PL",
     },
     {
       name: "IDGenX",
@@ -19,9 +19,9 @@ export default function Projects() {
 
   const miniProjects = [
     {
-      name: "Tenzies Game",
-      description: "A Simple Game application using React.",
-      github: "https://github.com/dhanadharsini/Tenzies_game",
+      name: "Portfolio Website",
+      description: "A personal portfolio built using React to showcase projects and skills.",
+      github: "https://github.com/dhanadharsini/Portfolio",
     },
     {
       name: "Quiz Project",
